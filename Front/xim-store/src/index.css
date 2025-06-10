@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+
+/* Added smooth scrolling for better navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-scroll {
+  position: relative;
+  animation: scroll-up 60s linear infinite; /* Increased duration to 30 seconds */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: auto; /* Adjust rows dynamically */
+  gap: 1.5rem; /* Add spacing between reviews */
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
