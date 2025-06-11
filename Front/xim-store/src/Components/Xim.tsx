@@ -39,7 +39,7 @@ const Xim: React.FC = () => {
               <div
                 key={product.id}
                 className="rounded-lg shadow-md p-4 flex flex-col items-center"
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} // Semi-transparent background
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }} // Semi-transparent background
               >
                 <div className="relative w-full h-64 mb-4">
                   <img

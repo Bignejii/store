@@ -9,7 +9,7 @@ const Xim: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/products?category=xim`);
+        const response = await axios.get(`http://localhost:3000/api/products?category=reasnow`);
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -41,7 +41,7 @@ const Xim: React.FC = () => {
                 className="rounded-lg shadow-md p-4 flex flex-col items-center"
                 style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} // Semi-transparent background
               >
-                <div className="relative w-full h-64 mb-4">
+                <div className="relative w-full h-64 mb-4 ">
                   <img
                     src={product.thumbnail}
                     alt={product.title}

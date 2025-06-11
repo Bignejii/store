@@ -38,6 +38,8 @@ const countries = [
   { code: 'MX', name: 'Mexico' },
   { code: 'ZA', name: 'South Africa' },
   { code: 'OTHER', name: 'Other' },
+  { code: 'OM', name: 'OMAN' },
+
 ];
 
 const PaymentInner: React.FC = () => {
